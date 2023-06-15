@@ -1,0 +1,97 @@
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card h5 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+nav {
+    background-color: white;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+nav li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.content {
+    padding-top: 80px;
+    z-index: 1;
+    position: relative;
+}
+footer h1 {
+    font-size: 15px;
+    padding: 15px 0px 15px 30px;
+    color: white;
+}
+
+footer {
+    background-color: maroon;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-right: 280px;
+    padding-left: 10px;
+}
+
+footer div {
+    width: px;
+    padding: 10px;
+    margin: px;
+}
+
+button {
+    background-color: maroon;
+    position: relative;
+    font-size: 1.2em;
+    padding: 0.7em 1.4em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5em;
+    box-shadow: 0.5em 0.5em 0.5em #0000004d;
+}
+
+button::before {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg,#212121 0%, #212121 50%, #96041f 50%, #bf0426 60%);
+    border-radius: 0 0 0.5em 0;
+    box-shadow: 0.2em 0.2em 0.2em #0000004d;
+    transition: 0.3s;
+}
+
+button:hover::before {
+    width: 1.6em;
+    height: 1.6em;
+}
+
+button:active{
+    box-shadow: 0.2em 0.2em 0.3em #0000004d;
+    transform: translate(0.1em, 0.1em);
+}
